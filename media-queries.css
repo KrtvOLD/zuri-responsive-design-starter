@@ -1,0 +1,98 @@
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  div.nav-bar {
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  ul.nav-links {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: white;
+    transform: translateX(-3000px);
+    transition: transform 200ms;
+    box-shadow: 100px 0px 500px grey;
+  }
+
+  .nav-links.open-links {
+    transform: translateX(0);
+  }
+
+  ul li {
+    margin: 40px 2vw;
+    list-style: none;
+    font-size: 1.5rem;
+  }
+
+  .menu-icon {
+    display: initial;
+    color: #bcc3c7;
+    font-size: 1.5rem;
+    cursor: pointer;
+    right: 10px;
+  }
+  .menu-icon:hover {
+    color: #fff;
+  }
+
+  div.hero-section {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  div.hero-content-heading {
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  div.hero-content-btn {
+    white-space: nowrap;
+  }
+
+  div.background {
+    width: 550px;
+    position: relative;
+  }
+
+  div.hero-background-pos {
+    width: 100px;
+    height: 100px;
+  }
+
+  div.snapshot-team p {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  div.snapshot-box-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  div.footer-input {
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  input[type="text"] {
+    margin-bottom: 15px;
+  }
+}
